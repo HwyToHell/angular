@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-assignment34',
-  templateUrl: './assignment34.component.html',
-  styleUrls: ['./assignment34.component.css']
+  selector: 'app-assignment2',
+  templateUrl: './assignment2.component.html',
+  styleUrls: ['./assignment2.component.css']
 })
-export class Assignment34Component implements OnInit {
+export class Assignment2Component implements OnInit {
   userName = "";
   nChar = 0;
 

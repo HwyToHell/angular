@@ -1,0 +1,17 @@
+<h3>Assignment 3</h3>
+<button 
+    type="button"
+    class="btn btn-primary"
+    (click)="isVisible = !isVisible"
+    (click)="onClick($event)">Display details</button>
+<p *ngIf="isVisible">5th time stamp below with blue background</p>
+<ul>
+    <li 
+        *ngFor="let count of timeStamps; let i=index"
+        [ngStyle]="{backgroundColor: (i>3 ? 'blue' : 'white')}"
+        [ngClass]="{'white-text': (i>3 ? true : false)}"
+        >time stamp: {{ count }}</li>
+</ul>
+
+<p [ngStyle]="{color: 'red'}">1st paragraph with direct style binding</p>
+<p [style.color]="'red'">2nd paragraph with ngStyle directive</p>
